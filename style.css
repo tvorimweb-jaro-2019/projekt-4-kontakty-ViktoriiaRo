@@ -8,3 +8,77 @@ body {
 }
 
 /* ---------------------------------------------------- */
+
+img {
+	border-radius: 50%;
+}
+
+h1 {
+	text-align: center;
+	font-size: 25px;
+	margin: 20px;
+}
+
+h2 {
+	font-size: 18px;
+}
+
+p {
+	margin-bottom: 0;
+}
+
+.member {
+	text-align: center;
+	padding: 20px;
+	margin: 10px;
+	border: 2px solid rgb(230, 230, 230);
+	border-radius: 10px;
+}
+
+@media (min-width: 540px) {
+
+	.team {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;	
+	}
+
+	.member {
+		display: flex;
+		flex-direction: row;
+		text-align: left;
+		flex-grow: 1;
+		width: 45%;
+	}
+
+	.profil {
+		flex-direction: column;
+		padding-left: 20px;
+	}
+
+	img {
+		height: 100px;
+	}
+}
+
+@media (min-width: 960px) {
+
+	.team {
+		display: flex;
+		flex-direction: row;
+	}
+
+	.member {
+		text-align: center;
+		flex-direction: column;
+		width: 20%;
+	}
+
+	.profil {
+		padding: 0;
+	}
+
+	img {
+		height: 128px;
+	}
+}
